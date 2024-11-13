@@ -1,0 +1,18 @@
+/* src/styles/Footer.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  

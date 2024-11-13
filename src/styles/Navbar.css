@@ -1,0 +1,60 @@
+/* Default Navbar Styles */
+.navbar-nav .nav-link {
+    font-weight: bold; /* Make text bold */
+    font-size: 1.1rem;  /* Adjust font size */
+    color: #ffffff;     /* White color for text */
+  }
+  
+  /* Navbar Text Color when Dark Mode is On */
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Make sure text is white in dark mode */
+  }
+  
+  /* Navbar Text Color when Dark Mode is Off */
+  .navbar-light .navbar-nav .nav-link {
+    color: #212529; /* Dark text color for light mode */
+  }
+  
+  /* Navbar Text Hover Effect */
+  .navbar-nav .nav-link:hover {
+    color: #e2e6ea; /* Light hover effect */
+  }
+  
+  /* Style for the Navbar Brand */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;  /* Larger font size for the brand */
+    color: #ffffff;  /* White color for the brand */
+  }
+  
+  /* Dark Mode Toggle Styles */
+  .dark-mode-switch {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dark-mode-switch label {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Navbar Responsiveness: Mobile View */
+  @media (max-width: 767px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-toggler {
+      border: none;
+    }
+  
+    .navbar-toggler-icon {
+      color: #ffffff;  /* White color for the toggle icon */
+    }
+  
+    /* Adjust dark mode switch position on small screens */
+    .dark-mode-switch {
+      margin-top: 10px;
+    }
+  }
+  

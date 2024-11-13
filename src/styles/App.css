@@ -1,0 +1,29 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+button {
+  margin-top: 10px;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
