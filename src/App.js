@@ -14,7 +14,7 @@ function App() {
   const [categories, setCategories] = useState(['Food', 'Transport', 'Bills']);
   const [darkMode, setDarkMode] = useState(false);
   const [currency, setCurrency] = useState('USD');
-  const [editingExpense, setEditingExpense] = useState(null); // Stores index of editing expense
+  const [editingExpense, setEditingExpense] = useState(null);
 
   // Load data from localStorage on initial load
   useEffect(() => {
@@ -59,6 +59,17 @@ function App() {
   // Add a new category
   const addCategory = (category) => setCategories([...categories, category]);
 
+  // Update a category
+  const updateCategory = (index, newCategory) => {
+    const updatedCategories = categories.map((cat, i) => (i === index ? newCategory : cat));
+    setCategories(updatedCategories);
+  };
+
+  // Delete a category
+  const deleteCategory = (index) => {
+    setCategories(categories.filter((_, i) => i !== index));
+  };
+
   // Set the index of the expense being edited
   const editExpense = (index) => setEditingExpense(index);
 
@@ -93,7 +104,14 @@ function App() {
             />
             <Route
               path="/categories"
-              element={<Categories categories={categories} addCategory={addCategory} />}
+              element={
+                <Categories
+                  categories={categories}
+                  addCategory={addCategory}
+                  updateCategory={updateCategory} // Pass update function
+                  deleteCategory={deleteCategory} // Pass delete function
+                />
+              }
             />
             <Route
               path="/preferences"

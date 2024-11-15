@@ -1,0 +1,90 @@
+/* Documentation.css */
+
+/* General Styling */
+.documentation {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doc-title {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .doc-welcome {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .doc-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .doc-section h3 {
+    font-size: 1.3rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .doc-section p {
+    color: #333;
+  }
+  
+  .doc-section ul {
+    list-style-type: none;
+    padding-left: 1rem;
+  }
+  
+  .doc-section li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .doc-section li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+  }
+  
+  .doc-footer {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 767px) {
+    .documentation {
+      padding: 15px;
+    }
+  
+    .doc-title {
+      font-size: 1.8rem;
+    }
+  
+    .doc-section h3 {
+      font-size: 1.2rem;
+    }
+  
+    .doc-section li {
+      font-size: 0.95rem;
+    }
+  
+    .doc-footer {
+      font-size: 1rem;
+    }
+  }
+  
